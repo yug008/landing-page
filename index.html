@@ -1,0 +1,392 @@
+<!--This file contains HTML and Internal CSS. CSS is done internally inside <head> using <style>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeLaunch AI</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f8fafc;
+    color:#0f172a;
+}
+
+/* Navbar */
+
+header{
+    background-color:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+}
+
+.signup-btn{
+    background-color:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    min-height:80vh;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-buttons button{
+    padding:12px 24px;
+    margin-right:15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.primary-btn{
+    background-color:#2563eb;
+    color:white;
+}
+
+.secondary-btn{
+    background-color:#38bdf8;
+    color:white;
+}
+
+.hero-image{
+    width:40%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Features */
+
+.features{
+    padding:80px;
+    text-align:center;
+}
+
+.features h2{
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Stats */
+
+.stats{
+    background-color:#2563eb;
+    color:white;
+    padding:60px;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+}
+
+.stat h2{
+    font-size:40px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:80px;
+    text-align:center;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.review{
+    background:white;
+    width:300px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+
+.cta{
+    background-color:#0f172a;
+    color:white;
+    text-align:center;
+    padding:80px;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+.cta button{
+    padding:12px 24px;
+    border:none;
+    border-radius:5px;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image{
+        margin-top:30px;
+    }
+
+    .stats-container{
+        flex-direction:column;
+        gap:30px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+    <div class="logo">CodeLaunch AI</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="signup-btn">Sign Up</button>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+    <h1>Build Software Faster with AI</h1>
+
+    <p>
+        Generate project ideas, write code and create
+        documentation in seconds.
+    </p>
+
+    <div class="hero-buttons">
+        <button class="primary-btn">Get Started</button>
+        <button class="secondary-btn">Watch Demo</button>
+    </div>
+</div>
+
+<div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000"
+         alt="Coding">
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Our Features</h2>
+
+<div class="feature-container">
+
+    <div class="card">
+        <h3>Project Generator</h3>
+        <p>Get unique project ideas instantly.</p>
+    </div>
+
+    <div class="card">
+        <h3>Code Assistant</h3>
+        <p>Generate code snippets and save time.</p>
+    </div>
+
+    <div class="card">
+        <h3>Documentation AI</h3>
+        <p>Create professional documentation automatically.</p>
+    </div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stats-container">
+
+    <div class="stat">
+        <h2>10K+</h2>
+        <p>Users</p>
+    </div>
+
+    <div class="stat">
+        <h2>500K+</h2>
+        <p>Lines Generated</p>
+    </div>
+
+    <div class="stat">
+        <h2>98%</h2>
+        <p>Satisfaction</p>
+    </div>
+
+</div>
+
+</section>
+
+<section class="testimonials">
+
+<h2>What Our Users Say</h2>
+
+<br><br>
+
+<div class="testimonial-container">
+
+    <div class="review">
+        <h3>Alex</h3>
+        <p>Fantastic tool for developers.</p>
+    </div>
+
+    <div class="review">
+        <h3>Sarah</h3>
+        <p>Helped me complete projects faster.</p>
+    </div>
+
+    <div class="review">
+        <h3>Michael</h3>
+        <p>Great productivity boost for startups.</p>
+    </div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready to Build Smarter?</h2>
+
+<button>Start Free Trial</button>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 CodeLaunch AI</p>
+
+<br>
+
+<a href="#">About</a>
+<a href="#">Privacy</a>
+<a href="#">Contact</a>
+
+</footer>
+
+</body>
+</html>
